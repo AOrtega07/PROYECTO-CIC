@@ -1,0 +1,89 @@
+:root {
+    --dark-max: #080808;
+    --dark-min: #121212;
+    --light: #ffffff;
+    --grey: #494949;
+}
+
+.bg-dark {
+    background-color: var(--dark-max) !important;
+}
+.bg-dark-x {
+    background-color: var(--dark-min) !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover {
+    color: var(--light);
+}
+
+p {
+    color: var(--grey);
+}
+
+.logo:hover {
+    color: var(--light);
+}
+
+.welcome-title {
+    color: var(--light);
+    font-weight: bold;
+}
+
+.form-label {
+    color: var(--light);
+}
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+#olvido:hover {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.form-control, .btn {
+    min-height: 3.125rem;
+    line-height: initial;
+    color: var(--light);
+}
+
+.aviso {
+    text-align: center;
+}
+
+.img-1 {
+    background-image: url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    background-image: url('../img/img-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}

@@ -1,0 +1,80 @@
+:root {
+    --dark-max: #080808;
+    --dark-min: #121212;
+    --light: #ffffff;
+    --grey: #494949;
+}
+
+
+.bg-dark {
+    background-color: var(--dark-max) !important;
+}
+
+.bg-dark-x {
+    background-color: var(--dark-max) !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+}
+
+
+.nav-bar {
+    background-color: white;
+}
+
+.card-body {
+    background-color: rgb(0,0,0);
+    border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 2%;
+}
+
+label {
+    color: white;
+}
+
+#main-menu {
+    left: unset;
+    right: 0;
+
+}
+
+#ordenar-genero {
+    cursor: pointer;
+
+}
+
+#form-container {
+    width: 40vw;
+    
+
+}
+
+.form-control,
+.btn {
+    min-height: 3.125rem;
+    line-height: initial;
+    color: var(--light);
+}
+
+.form-label {
+    color: var(--light);
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+.form-group{
+    border-bottom: 1px solid rgb(255, 255, 255,.7);
+}
+

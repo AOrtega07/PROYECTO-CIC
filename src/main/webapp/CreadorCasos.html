@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Creador de casos</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/casos.js"></script>
+        <link rel="stylesheet" href="css/CrearCaso.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark" style="border-bottom:1px solid rgb(255, 255, 255,.2); ">
+            <a href="index.html">
+                <button type="submit" class="btn-sm btn-primary btnnavbar-brand" id="regresar">Regresar</button>
+            </a>
+            <div class="logo">
+                <img src="img/aa.png" alt="Lofo" style="float: right;">
+
+                <div id="caso">
+                    <span class="badge badge-dark mr-3" id="user-saldo"></span>
+                    <div class="btn-group">
+                        <div class="dropdown-menu" id="main-menu">
+                            <a id="salir-btn" class="dropdown-item" href="/src/main/webapp/index.html">Volver</a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+
+        <main class="p-4 d-flex flex-column align-items-center">
+
+            <h1 style="font-family:fantasy; color:white;">CREAR CASO:</h1>
+
+            <div class="card border-0" id="form-container">
+                <div class="card-body w-100 px-lg-5 py-lg-4 p-4">
+                    <form method="GET" id="form-crearCaso" class="pb-4">
+                        <div class="form-group">
+                            <label for="input-clave">Tipo de caso <span style="color:brown">*</span></label>
+                            <input type="text" class="form-control bg-transparent border-0 mb-2" id="input-clave"
+                                   placeholder="Ingrese la palabra clave">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-contrasena">Descripción del caso <span style="color:brown">*</span></label>
+                            <input type="text" class="form-control bg-transparent border-0 mb-2" id="input-descripcion"
+                                   placeholder="Ingrese la descripción">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-nombre">Prioridad del caso <span style="color:brown">*</span></label>
+                            <input type="text" class="form-control bg-transparent border-0 mb-2" id="input-prioridad"
+                                   placeholder="Ingrese la prioridad" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-apellido">Fecha <span style="color:brown">*</span></label>
+                            <input type="date" class="form-control bg-transparent border-0 mb-2" id="input-fecha"
+                                   placeholder="(Este campo no se crea)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-detective">Estado<span style="color:brown">*</span></label>
+                            <input type="text" class="form-control bg-dark-x border-0 mb-2" id="input-estado"
+                                   placeholder="Abierto-En proceso-Pendiente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-saldo">Detective<span style="color:brown">*</span></label>
+                            <input type="text" step="any" class="form-control bg-dark-x border-0 mb-2"
+                                   id="input-detect" placeholder="Ingrese el detective" required>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                        <button type="submit" class="btn btn-light w-100" id="crearCaso" style="color:black; font: 20px bold; border-radius: 10px;">Crear caso</button>
+                    </form>
+                    <div class="alert alert-danger d-none" id="error" role="alert">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
